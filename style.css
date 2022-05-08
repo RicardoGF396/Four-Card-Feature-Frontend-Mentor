@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 370px;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    margin-top: 6rem;
+    color: var(--very-dark-blue);
+    text-align: center;
+    margin-bottom: 4rem;
+    width: 325px;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.text{
+    color: var(--grayish-blue);
+    margin-bottom: 2rem;
+}
+
+.card{
+    width: 325px;
+    background-color: white;
+    border-radius: .5rem;
+    -webkit-box-shadow: -1px 9px 19px 3px rgba(0,0,0,0.39); 
+    box-shadow: -1px 9px 19px 3px rgba(0,0,0,0.2);
+    padding: 1.5rem;
+    height: 250px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.subtitle{
+    color: var(--very-dark-blue);
+}
+
+.text-card{
+    color: var(--grayish-blue);
+}
+
+.img-container{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.line-blue{
+    background-color: var(--cyan-color);
+}
+
+.line-red{
+    background-color: var(--red-color);
+}
+
+.line-yellow{
+    background-color: var(--orange-color);
+}
+
+.line-blue-hard{
+    background-color: var(--blue-color);
+}
+
+
+@media (min-width:1024px){
+    
+    .content{
+        width: 1200px;
+    }
+
+    .row{
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container{
+     width: 550px;   
+    }
+}
